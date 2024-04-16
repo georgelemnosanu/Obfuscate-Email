@@ -1,14 +1,9 @@
-﻿using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-
-class ObfuscateEmail
+﻿class ObfuscateEmail
 {
     static void Main(string[] args)
     {
         ObfuscateEmail email = new ObfuscateEmail();
-        email.consoreMail();
-        
-        
+        email.consoreMail();  
     }
 
     public string introduceMail()
@@ -25,7 +20,9 @@ class ObfuscateEmail
                     continue;
                 }
                 return email;
+           
             }catch (Exception ex)
+           
             {
                 Console.WriteLine(ex.ToString);
             }
